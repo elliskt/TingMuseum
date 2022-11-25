@@ -1,0 +1,485 @@
+.alreadyBuilt {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    background-color: #fff !important;
+
+    & .alreadyBuilt__container {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 1rem 0 0 0;
+        flex: 1 1 auto;
+
+        & .titleAndBtn {
+            display: flex;
+            flex-direction: column;
+            width: inherit;
+
+            & h1 {
+                color: black;
+                font-family: 'MyriadConcept';
+                font-size: 3rem;
+            }
+
+            & .sortButtons {
+                font-family: 'HelveticaNeue';
+                width: 43rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                color: #fff;
+                margin-bottom: 3rem;
+                margin-top: 2rem;
+                height: 3rem;
+                font-weight: bolder;
+
+                & .space {
+                    background: linear-gradient(to right, #d10cc8, #fd3e1a);
+                    border-radius: 4px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    box-sizing: border-box;
+                    width: 10rem;
+                    cursor: pointer;
+                    height: 100%;
+
+                    & div {
+                        display: flex;
+                        text-align: center;
+                        justify-content: center;
+                        align-items: center;
+                        width: 70%;
+                        height: 100%;
+                    }
+                }
+
+                & .spaceBtn.active {
+                    background: linear-gradient(to right, #d10cc8, #fd3e1a);
+                    border-radius: 4px;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    box-sizing: border-box;
+                    width: 10rem;
+                    cursor: pointer;
+
+                    & div {
+                        display: flex;
+                        text-align: center;
+                        align-items: center;
+                        justify-content: center;
+                        width: 70%;
+                        height: 100%;
+                    }
+                }
+
+
+
+
+
+
+
+                & .commonBtn {
+                    border-radius: 4px;
+                    border: 1px solid #c5c5c5;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    box-sizing: border-box;
+                    width: 10rem;
+                    height: 100%;
+                    cursor: pointer;
+                    color: #606a6e;
+
+                    & div {
+                        display: flex;
+                        text-align: center;
+                        justify-content: center;
+                        align-items: center;
+                        width: 80%;
+                        height: 100%;
+                    }
+                }
+
+                & .gallery {
+                    border-radius: 4px;
+                    border: 1px solid #c5c5c5;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    box-sizing: border-box;
+                    width: 10rem;
+                    height: 100%;
+                    cursor: pointer;
+                    color: #606a6e;
+
+                    & div {
+                        display: flex;
+                        text-align: center;
+                        justify-content: center;
+                        align-items: center;
+                        width: 80%;
+                        height: 100%;
+                    }
+                }
+
+                & .galleryBtn.active {
+                    background: linear-gradient(to right, #d10cc8, #fd3e1a);
+                    border-radius: 4px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    box-sizing: border-box;
+                    width: 10rem;
+                    cursor: pointer;
+                    height: 100%;
+
+                    & div {
+                        display: flex;
+                        text-align: center;
+                        justify-content: center;
+                        align-items: center;
+                        width: 80%;
+                        height: 100%;
+                    }
+                }
+
+                & .coming {
+                    border-radius: 4px;
+                    border: 1px solid #c5c5c5;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    box-sizing: border-box;
+                    width: 10rem;
+                    height: 100%;
+                    cursor: pointer;
+                    color: #606a6e;
+
+                    & div {
+                        display: flex;
+                        text-align: center;
+                        justify-content: center;
+                        align-items: center;
+                        width: 80%;
+                        height: 100%;
+                    }
+                }
+
+                & .comingBtn.active {
+                    background: linear-gradient(to right, #d10cc8, #fd3e1a);
+                    border-radius: 4px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    box-sizing: border-box;
+                    width: 10rem;
+                    cursor: pointer;
+                    height: 100%;
+
+                    & div {
+                        display: flex;
+                        text-align: center;
+                        justify-content: center;
+                        align-items: center;
+                        width: 80%;
+                        height: 100%;
+                    }
+                }
+
+                & .cyberpunk {
+                    border-radius: 4px;
+                    border: 1px solid #c5c5c5;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    box-sizing: border-box;
+                    width: 10rem;
+                    height: 100%;
+                    cursor: pointer;
+                    color: #606a6e;
+
+                    & div {
+                        display: flex;
+                        text-align: center;
+                        justify-content: center;
+                        align-items: center;
+                        width: 80%;
+                        height: 100%;
+                    }
+                }
+
+                & .cyberpunkBtn.active {
+                    background: linear-gradient(to right, #d10cc8, #fd3e1a);
+                    border-radius: 4px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    box-sizing: border-box;
+                    width: 10rem;
+                    cursor: pointer;
+                    height: 100%;
+
+                    & div {
+                        display: flex;
+                        text-align: center;
+                        justify-content: center;
+                        align-items: center;
+                        width: 70%;
+                        height: 100%;
+                    }
+                }
+
+            }
+        }
+
+        & .mostnotableMuseums__item__container {
+            margin: 0 auto;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            & .mostnotableMuseums__item {
+                border-radius: 10px;
+                width: 32%;
+                height: 14rem;
+                position: relative;
+                margin-bottom: 1.8rem;
+                cursor: pointer;
+                transition: all ease .3s;
+                overflow: hidden;
+
+                &:hover {
+                    transition: all ease .3s;
+                    transform: translateY(-5px);
+                    box-shadow: 5px 5px 10px 10px rgb(235, 232, 232);
+                }
+
+                & .banner {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                    object-fit: cover;
+                }
+
+                & .mostnotableMuseums__item__info {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 40%;
+                    background-color: rgba(0, 0, 0, 0.7);
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    box-sizing: border-box;
+                    padding: 0 0 0 5%;
+                    border-radius: 0 0 10px 10px;
+
+                    & .mostnotableMuseums__item__left {
+                        color: white;
+                        font-family: 'MyriadConcept';
+                        font-size: 1.5rem;
+                        margin-right: 2%;
+                    }
+
+                    & .mostnotableMuseums__item__left__ske_mname {
+                        width: 50%;
+                    }
+
+                    & .mostnotableMuseums__item__right__ske__right {
+                        display: flex;
+                        align-items: center;
+                        width: 40%;
+                        height: 60%;
+
+                        & .mostnotableMuseums__item__right__avatar__ske_avatar {
+                            border-radius: 50%;
+                            width: 32px;
+                            height: 32px;
+                        }
+
+                        & .mostnotableMuseums__item__right__detail__ske__detail {
+                            display: flex;
+                            flex-direction: column;
+                            width: 80%;
+                            height: 100%;
+                            justify-content: space-evenly;
+                            align-items: center;
+
+                            & .mostnotableMuseums__item__right__detailName__ske_mname {
+                                width: 80%;
+                                margin-bottom: 1%;
+                            }
+
+                            & .mostnotableMuseums__item__right__detailAddress__ske_mname {
+                                width: 80%;
+                            }
+                        }
+                    }
+
+                    & .mostnotableMuseums__item__right {
+                        display: flex;
+                        color: white;
+                        font-family: 'HelveticaNeue';
+                        overflow: hidden;
+
+                        & .mostnotableMuseums__item__right__avatar {
+                            border-radius: 50%;
+                            width: 32px;
+                            height: 32px;
+                            margin-right: 0.5rem;
+                        }
+
+
+
+                        & .mostnotableMuseums__item__right__detail {
+                            display: flex;
+                            flex-direction: column;
+
+                            & .mostnotableMuseums__item__right__detailName {
+                                width: 100%;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                            }
+
+                            & .mostnotableMuseums__item__right__detailAddress {
+                                width: 100%;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                            }
+
+                        }
+
+
+                    }
+                }
+            }
+        }
+
+        & .loadMoreBtn__container {
+            width: 100%;
+            height: 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            & .loadMoreBtn {
+                width: 11.238rem;
+                height: 2.25rem;
+                color: #999999;
+                font-family: 'HelveticaNeue';
+                border: 1px solid #cdcdcd;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-sizing: border-box;
+                cursor: pointer;
+            }
+        }
+
+        & .loadingSymbol {
+            width: 100%;
+            height: 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            & svg {
+                width: 80%;
+                height: 80%;
+                animation: spin 1s infinite ease-in-out;
+            }
+
+            @keyframes spin {
+                from {
+                    transform: rotate(0deg);
+                }
+
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+        }
+
+        & .comingSoonContainer {
+            margin: 0 auto;
+            width: 100%;
+            height: 31.6rem;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            & .comingSoonBtn {
+                width: 30%;
+                height: 14rem;
+                border-radius: 8px;
+                background-color: #112675;
+                font-size: 5rem;
+                color: white;
+                font-family: 'HelveticaNeue';
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                & .text {
+                    width: inherit;
+                    height: inherit;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+    & .joinAndFoot {
+        position: relative;
+
+        & .join {
+            width: 100%;
+            // max-width: 90rem;
+            height: 15rem;
+            background-color: #1c1c20;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+            color: white;
+
+            & h1 {
+                font-family: 'MyriadConcept';
+                font-size: 2.5rem;
+            }
+
+            & .icons {
+                width: 15rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                & svg {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    & .foot {
+        width: 100%;
+        height: 14rem;
+    }
+}

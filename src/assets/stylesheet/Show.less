@@ -1,0 +1,197 @@
+/* 改了loading之后的样式*/
+// .Building {
+//   width: 100%;
+//   height: 100%;
+//   overflow: hidden;
+//   position: relative;
+
+// }
+
+// .howToUseMuseum__container {
+//   width: 100%;
+//   height: 100%;
+//   background-color: transparent !important;
+//   position: absolute;
+//   z-index: 2000;
+
+//   & .howToUseMuseum {
+//     height: 30rem !important;
+//     width: 30rem !important;
+//     position: absolute;
+//     background-color: rgb(67, 65, 65);
+//     border-radius: 8px;
+//     z-index: 5000;
+//     margin: 0 auto;
+//     top: 25%;
+//     left: 35.5vw;
+//     z-index: 5000 !important;
+
+//     & .topBanner {
+//       width: 100%;
+//       height: 60%;
+//       position: absolute;
+//       top: 0;
+//       border-radius: 8px 8px 0 0;
+
+//       & .bannerImg {
+//         width: 100%;
+//         height: 100%;
+//         object-fit: cover;
+//         animation: none !important;
+//         border-radius: 8px 8px 0 0;
+
+//       }
+//     }
+
+//     & .museumInfo {
+//       width: 100%;
+//       height: 40%;
+//       position: absolute;
+//       background-color: rgb(4, 3, 3);
+//       bottom: 0;
+//       border-radius: 0 0 8px 8px;
+//       padding: 2rem 0 0 2rem;
+//       box-sizing: border-box;
+//       font-size: 2rem;
+//       font-family: 'MyriadConcept';
+
+//     }
+
+//   }
+// }
+
+
+// .background-content {
+//   margin: auto;
+//   height: 30rem !important;
+//   width: 30rem !important;
+//   position: relative;
+//   border-color: #fff;
+//   z-index: 999;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// .contentBox {
+//   height: 94vh;
+//   position: relative;
+//   overflow: hidden;
+//   z-index: 5;
+// }
+
+// .topShadow {
+//   padding: 40px 0;
+//   background: linear-gradient(to bottom,
+//       rgba(37, 37, 37, 1) 0%,
+//       rgba(37, 37, 37, 0.4) 30%,
+//       rgba(37, 37, 37, 0.3) 40%,
+//       rgba(37, 37, 37, 0) 100%);
+//   position: absolute;
+//   top: 0;
+//   width: 100%;
+//   pointer-events: none;
+//   z-index: 1;
+// }
+
+// .buttomShadow {
+//   padding: 110px 0;
+//   background: linear-gradient(to top,
+//       rgba(37, 37, 37, 1) 0%,
+//       rgba(37, 37, 37, 0.4) 30%,
+//       rgba(37, 37, 37, 0.3) 40%,
+//       rgba(37, 37, 37, 0) 100%);
+//   position: absolute;
+//   bottom: 0;
+//   width: 100%;
+//   pointer-events: none;
+// }
+
+/*
+原来的样式
+*/
+.Building {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+}
+
+.contentBox {
+  height: 94vh;
+  position: relative;
+  overflow: hidden;
+  z-index: 5;
+
+  & .iframeContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    // filter: blur(12px);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease .3s;
+
+    & .closebtn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      transition: all ease .3s;
+
+      & svg {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: all ease .3s;
+
+        &:hover {
+          transition: all ease .3s;
+
+          & path {
+            transition: all ease .3s;
+
+            fill: rgb(185, 185, 194);
+          }
+        }
+      }
+    }
+
+    & .windyMuseIframe {
+      width: calc(100% - 320px);
+      height: calc(100% - 120px);
+    }
+
+  }
+
+
+
+}
+
+.topShadow {
+  padding: 40px 0;
+  background: linear-gradient(to bottom,
+      rgba(37, 37, 37, 1) 0%,
+      rgba(37, 37, 37, 0.4) 30%,
+      rgba(37, 37, 37, 0.3) 40%,
+      rgba(37, 37, 37, 0) 100%);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.buttomShadow {
+  padding: 110px 0;
+  background: linear-gradient(to top,
+      rgba(37, 37, 37, 1) 0%,
+      rgba(37, 37, 37, 0.4) 30%,
+      rgba(37, 37, 37, 0.3) 40%,
+      rgba(37, 37, 37, 0) 100%);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  pointer-events: none;
+}

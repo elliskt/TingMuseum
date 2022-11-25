@@ -1,0 +1,383 @@
+.giftRegister {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    background-color: #fff !important;
+
+    & .eventSelectPage {
+        width: 80%;
+        height: 65rem;
+        margin: 0 auto;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50rem;
+        flex: 1 1 auto;
+
+        & h1 {
+            font-family: 'Bitter';
+            height: 385px;
+            width: 644px;
+            margin: 0 auto;
+            font-size: 64px;
+            font-weight: 800;
+            letter-spacing: 0em;
+            text-align: center;
+            margin-top: 6rem;
+
+            & .community {
+                font-family: 'Bitter-Bold';
+                font-size: 64px;
+                font-style: italic;
+                font-weight: 700;
+                line-height: 77px;
+                letter-spacing: 0em;
+                text-align: center;
+                background: linear-gradient(to right, #f0837e, #ed59a4);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                width: 377px;
+                height: 77px;
+                display: inline-block;
+            }
+
+        }
+
+        & .eventList {
+            width: 68.3125rem;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            margin-top: 6rem;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+            padding-left: 2rem;
+
+            & .event {
+                height: 349px;
+                width: 322px;
+                border-radius: 17px;
+                position: relative;
+                cursor: pointer;
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                overflow: hidden;
+                margin-right: 2rem;
+                margin-bottom: 2rem;
+
+                &:hover {
+
+                    & video {
+                        transform: scale(1.3);
+                    }
+
+                    & img {
+                        transform: scale(1.3);
+
+                    }
+                }
+
+                & video {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 17px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transition: all ease .5s;
+
+
+                }
+
+                & img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 17px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transition: all ease .5s;
+                }
+
+                & .mask {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background-color: black;
+                    opacity: 0.28;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 17px;
+                }
+
+                & .title {
+                    position: relative;
+                    z-index: 99;
+                    font-family: 'Bitter-Bold';
+                    font-size: 30px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 36px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    color: white;
+                    margin-bottom: 1.5rem;
+                }
+
+                & .active {
+                    position: absolute;
+                    top: 13px;
+                    right: 17px;
+                    height: 32px;
+                    width: 83px;
+                    border-radius: 20px;
+                    background: rgba(255, 255, 255, 0.28);
+                    font-family: 'Bitter-Bold';
+                    color: rgba(255, 255, 255, 1);
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 14px;
+                    letter-spacing: 0.1em;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    z-index: 10;
+                }
+
+                & .expired {
+                    position: absolute;
+                    top: 13px;
+                    right: 17px;
+                    height: 32px;
+                    width: 83px;
+                    border-radius: 20px;
+                    background: rgba(255, 255, 255, 0.28);
+                    font-family: 'Bitter-Bold';
+                    color: #DC0000;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 14px;
+                    letter-spacing: 0.1em;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    z-index: 10;
+                }
+            }
+        }
+    }
+
+    & .gift__container {
+        width: 80%;
+        height: 70rem;
+        margin: 0 auto;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+        flex: 1 1 auto;
+        margin-bottom: 0rem;
+
+        & h1 {
+            font-family: 'MyriadConcept';
+            font-size: 3.5rem;
+            padding: 1rem 0 1rem 1rem;
+            text-align: center;
+        }
+
+        & .center {
+            width: 48.625rem;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+
+            & .bannerAndAddress {
+                width: 41.625rem;
+                height: 40rem;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                box-sizing: border-box;
+                border-radius: 5px;
+                margin-bottom: 1rem;
+
+                & .banner {
+                    width: 100%;
+                    height: 78%;
+                    border-radius: 5px;
+                    box-sizing: border-box;
+                    overflow: hidden;
+                    position: relative;
+
+                    & img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+
+                    & video {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+
+                    & .tip {
+                        width: 100%;
+                        height: 26px;
+                        position: absolute;
+                        bottom: 0;
+                        background: #9e8657;
+                        font-family: 'Bitter-Bold';
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 24px;
+                        letter-spacing: 0em;
+                        text-align: center;
+                        color: rgba(255, 235, 235, 1);
+
+
+                    }
+                }
+
+                & .address {
+                    font-family: 'HelveticaNeue';
+                    width: 100%;
+                    height: 8%;
+                    font-family: 'HelveticaNeue';
+                    border-radius: 5px;
+                    background-color: #f5f5f5;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                & .discordId {
+                    font-family: 'HelveticaNeue';
+                    width: 100%;
+                    height: 8%;
+                    font-family: 'HelveticaNeue';
+                    border-radius: 5px;
+                    background-color: #f5f5f5;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    & input {
+                        font-family: 'HelveticaNeue';
+                        font-size: 1rem;
+                        width: 90%;
+                        height: 60%;
+                        outline: none;
+                        background-color: transparent;
+                        border: none;
+                        text-align: center;
+
+                        &::-webkit-input-placeholder {
+                            color: #aab2bd;
+                        }
+
+                    }
+                }
+
+            }
+
+            & .btns {
+                width: 41.625rem;
+                height: 3rem;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                color: white;
+                font-family: 'HelveticaNeue';
+
+                & .confirm {
+                    box-sizing: border-box;
+                    width: 20%;
+                    height: 100%;
+                    line-height: 100%;
+                    background-image: linear-gradient(to right, #cc208e 0%, #6713d2 100%);
+                    border-radius: 4px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                }
+
+                & .cancel {
+                    box-sizing: border-box;
+                    width: 20%;
+                    height: 100%;
+                    background-color: #DCD9D4;
+                    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), radial-gradient(at 50% 0%, rgba(255, 255, 255, 0.10) 0%, rgba(0, 0, 0, 0.50) 50%);
+                    background-blend-mode: soft-light, screen;
+                    border-radius: 4px;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    justify-content: center;
+                }
+            }
+
+            & .eventRegisterText {
+                width: 48.625rem;
+                height: 10rem;
+                margin: 0 auto;
+                margin-top: 1rem;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding-left: 3rem;
+
+                & img {
+                    width: 16px;
+                    height: 16px;
+                    margin-right: .5rem;
+                }
+
+                & h2 {
+                    font-family: 'MyriadConcept';
+                    padding: 1rem 1rem 1rem 0;
+                    font-size: 1.1rem;
+                    color: #6f767a;
+
+                    & .discord {
+                        cursor: pointer;
+                        color: blue;
+                        transition: all ease .3s;
+
+                        &:hover {
+                            color: #d496d2;
+                        }
+                    }
+
+                    & .profile {
+                        color: #d496d2;
+
+                    }
+                }
+            }
+        }
+    }
+
+    & .foot {
+        width: 100%;
+        height: 14rem;
+    }
+}

@@ -1,0 +1,146 @@
+{
+    "object": {
+        "Product_1": {
+            "state": "true",
+            "position": [
+                4.42, -18,
+                1.5
+            ],
+            "rotation": [
+                0,
+                0,
+                270
+            ],
+            "type": "texture",
+            "preview": "",
+            "url": "model/EH001/images/WechatIMG2.jpeg"
+        },
+        "Product_2": {
+            "state": "true",
+            "position": [
+                4.42, -16.155,
+                1.7
+            ],
+            "rotation": [
+                0,
+                0,
+                270
+            ],
+            "type": "texture",
+            "preview": "",
+            "url": "model/EH001/images/WechatIMG3.jpeg"
+        },
+        "Product_3": {
+            "state": "true",
+            "position": [
+                4.42, -8.24,
+                1.7
+            ],
+            "rotation": [
+                0,
+                0,
+                270
+            ],
+            "type": "texture",
+            "preview": "",
+            "url": "model/EH001/images/_DSC7202.jpg"
+        },
+        "Product_4": {
+            "state": "true",
+            "position": [
+                4.42, -5.7,
+                1.7
+            ],
+            "rotation": [
+                0,
+                0,
+                270
+            ],
+            "type": "video",
+            "preview": "model/EH001/images/CinematicPlexus08.jpg",
+            "url": "model/EH001/images/CinematicPlexus08.mp4"
+        },
+        "Product_5": {
+            "state": "true",
+            "position": [
+                4.42, -1.76,
+                1.7
+            ],
+            "rotation": [
+                0,
+                0,
+                270
+            ],
+            "type": "video",
+            "preview": "model/EH001/images/CinematicPlexus06.jpg",
+            "url": "model/EH001/images/CinematicPlexus06.mp4"
+        },
+        "Product_6": {
+            "state": "true",
+            "position": [
+                4.42,
+                0.38,
+                1.7
+            ],
+            "rotation": [
+                0,
+                0,
+                270
+            ],
+            "type": "texture",
+            "preview": "",
+            "url": "model/EH001/images/_DSC8271.JPG"
+        },
+        "Product_7": {
+            "state": "true",
+            "position": [
+                4.42,
+                2.1,
+                1.7
+            ],
+            "rotation": [
+                0,
+                0,
+                270
+            ],
+            "type": "texture",
+            "preview": "",
+            "url": "model/EH001/images/1BD00C8E-F6D6-4848-8068-C1FB38EE8E0C.JPG"
+        },
+        "Product_8": {
+            "state": "true",
+            "position": [
+                4.42,
+                5.3,
+                1.7
+            ],
+            "rotation": [
+                0,
+                0,
+                270
+            ],
+            "type": "texture",
+            "preview": "",
+            "url": "model/EH001/images/135mm5000f4_79s.jpg"
+        }
+    },
+    "CameraTarget": [
+        0.051879837992083386, -17.92162661162511,
+        1.734356785718779
+    ],
+    "CameraInitial": [
+        0.03466096734809303, -12.120134264284127,
+        1.734356785718779
+    ],
+    "CameraPoint": [-0.054382953793835245,
+        17.881114816614655,
+        1.734356785718779
+    ],
+    "CameraTime": "1.6",
+    "Bloom": [
+        false,
+        0.8,
+        0.3,
+        0.5
+    ]
+}

@@ -1,0 +1,287 @@
+.upload__container {
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    background-color: inherit;
+    font-family: 'HelveticaNeue';
+
+    & .upload {
+        width: 80%;
+        height: 80%;
+        margin: 0 auto;
+        position: relative;
+        z-index: 99;
+        display: flex;
+        justify-content: space-between;
+        padding: 5% 5% 0 5%;
+        min-width: 80rem;
+        min-height: 55rem;
+
+        & .upload__img {
+            width: 40%;
+            height: 70%;
+            border-radius: 10px;
+            border: 2px dashed gray;
+            transition: all .3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffffff;
+            cursor: pointer;
+            position: relative;
+
+            & .upload-demo {
+                z-index: 3;
+                width: 100%;
+                height: 100%;
+                border-radius: 8px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background-color: rgba(56, 54, 54, 0.5) !important;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+
+                & .icon-tingMuseumupload {
+                    font-size: 60px;
+                    // margin-top: 30px;
+                    color: aliceblue;
+                    margin-bottom: 1%;
+                }
+
+                & .el-upload-dragger {
+                    background-color: transparent;
+                    border: 1px dashed #d9d9d9;
+                    border-radius: 16px;
+                    box-sizing: border-box;
+                    width: 900px;
+                    height: 600px;
+                    text-align: center;
+                    // position: relative;
+                    // left: 60%;
+                    overflow: hidden;
+                    border: none;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    padding-bottom: 9%;
+                }
+
+            }
+
+            & .ok {
+                border-radius: 20px;
+                background-color: #3772FF;
+                position: absolute;
+                right: 16px;
+                bottom: 16px;
+                color: aliceblue;
+                font-size: 14px;
+                padding: 10px 10px;
+                transition: all 0.5s;
+                cursor: pointer;
+                z-index: 3;
+                width: 50px;
+                text-align: center;
+
+                &:hover {
+                    background-color: #044eff;
+                    transition: all 0.5s;
+                }
+            }
+
+            & i {
+                width: 10%;
+                height: 10%;
+            }
+
+            &:hover {
+                border: 2px dashed #2767f6;
+                background-color: rgb(231, 227, 227);
+            }
+
+            & .afterUpload {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                overflow: hidden;
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                & img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+
+                & video {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        & .upload__afterUpload {
+            width: 40%;
+            height: 70%;
+            border-radius: 10px;
+            border: 2px dashed gray;
+            transition: all .3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffffff;
+            cursor: pointer;
+            position: relative;
+
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+
+            & video {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+
+            & .edit {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                z-index: 3;
+                border-radius: 20px;
+                background-color: #3772FF;
+                position: absolute;
+                right: 16px;
+                bottom: 16px;
+                color: aliceblue;
+                font-size: 14px;
+                padding: 10px 10px;
+                transition: all 0.5s;
+                cursor: pointer;
+                z-index: 3;
+                width: 50px;
+                text-align: center;
+
+                &:hover {
+                    background-color: #044eff;
+                    transition: all 0.5s;
+                }
+            }
+
+            & .add {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+            }
+        }
+
+        & .upload__infoList {
+            width: 50%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+
+            & .creator,
+            .description,
+            .name,
+            .owner {
+                color: #b4b5b8;
+                margin-bottom: 1%;
+
+            }
+
+
+            & .upload__infoList__inputContainer {
+                width: 100%;
+                height: 10%;
+                border-radius: 10px;
+                background-color: #f5f5f5;
+                margin-bottom: 1%;
+
+                &:focus {
+                    background-color: red;
+                }
+
+                & .upload__infoList__input {
+                    background-color: #f5f5f5;
+                    width: 100%;
+                    height: 100%;
+                    outline: none;
+                    border: none;
+                    padding: 0 5%;
+                    border-radius: 10px;
+                    box-sizing: border-box;
+                    font-family: 'HelveticaNeue';
+
+                }
+            }
+
+            & .upload__infoList__textareaContainer {
+                width: 100%;
+                height: 30%;
+                border-radius: 10px;
+                background-color: #f5f5f5;
+                margin-bottom: 1%;
+
+                & .upload__infoList__textarea {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                    background-color: #f5f5f5;
+                    margin-bottom: 1%;
+                    outline: none;
+                    word-break: break-all;
+                    resize: none;
+                    border: none;
+                    padding: 5%;
+                    box-sizing: border-box;
+                    font-family: 'HelveticaNeue';
+
+
+                }
+            }
+
+            & .controlBtn {
+                width: 100%;
+                height: 10%;
+                display: flex;
+                margin-top: 1%;
+                justify-content: space-evenly;
+
+                & .confirm,
+                .clearAll {
+                    border: none;
+                    color: #b4b5b8;
+                    width: 35%;
+                    height: 90%;
+                    border-radius: 2rem;
+                    background-color: #3e76f6;
+                    transition: all .3s ease;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    font-size: 1.2rem;
+                    font-weight: 800;
+
+                    &:hover {
+                        background-color: #0755f5;
+                    }
+                }
+            }
+        }
+    }
+}

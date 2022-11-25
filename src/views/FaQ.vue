@@ -1,0 +1,470 @@
+<template>
+  <div class="faq__container">
+    <Header></Header>
+    <div class="outer__inner">
+      <div class="section faq">
+        <div class="faq__center center">
+          <div class="faq__top">
+            <h1 class="faq__title h2 animate__animated animate__fadeIn">
+              {{ $t("faq.frequentlyAsked") }}
+            </h1>
+            <div class="faq__stage animate__animated animate__fadeIn">
+              {{ $t("faq.help") }}
+            </div>
+          </div>
+          <div class="leftAndRight">
+            <div class="left">
+              <div
+                class="left__general general animate__animated animate__fadeIn"
+              >
+                <a @click="activeGeneral">{{ $t("faq.general") }}</a>
+              </div>
+              <div
+                class="left__support support animate__animated animate__fadeIn"
+              >
+                <a @click="activeSupport">{{ $t("faq.support") }}</a>
+              </div>
+            </div>
+            <div class="container">
+              <div
+                class="faq-js-tabs-item animate__animated animate__fadeIn"
+                id="f1"
+              >
+                <div class="faq__item">
+                  <div class="faq__head" @click="activeFaqBody">
+                    {{ $t("faq.whatIsNFT") }}
+                    <svg
+                      t="1644292078472"
+                      class="arrow"
+                      viewBox="0 0 1024 1024"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      p-id="11216"
+                      width="32"
+                      height="32"
+                    >
+                      <path
+                        d="M740.522667 368.896a41.898667 41.898667 0 0 0-57.856 0L514.133333 529.408 345.6 368.896a41.898667 41.898667 0 0 0-57.856 60.586667l226.389333 216.149333 226.389334-216.064a41.898667 41.898667 0 0 0 0-60.586667z"
+                        fill="#8a8a8a"
+                        p-id="11217"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="faq__body">
+                    <div class="faq__content">
+                      NFT stands for non-fungible tokens，hosted on HECO's
+                      blockchain. Each NFT is a unique digital item such as
+                      collectibles or artworks with its growing value anchored
+                      with the unfolding development of blockchain technology.
+                    </div>
+                  </div>
+                </div>
+                <div class="faq__item">
+                  <div class="faq__head" @click="activeFaqBody">
+                    {{ $t("faq.cleanNFT") }}
+                    <svg
+                      t="1644292078472"
+                      class="arrow"
+                      viewBox="0 0 1024 1024"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      p-id="11216"
+                      width="32"
+                      height="32"
+                    >
+                      <path
+                        d="M740.522667 368.896a41.898667 41.898667 0 0 0-57.856 0L514.133333 529.408 345.6 368.896a41.898667 41.898667 0 0 0-57.856 60.586667l226.389333 216.149333 226.389334-216.064a41.898667 41.898667 0 0 0 0-60.586667z"
+                        fill="#8a8a8a"
+                        p-id="11217"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="faq__body">
+                    <div class="faq__content">
+                      Here in IcarusArt.AI we believe NFT is the future of Art,
+                      and we make Tech for Good. So by offering you Clean NFT,
+                      the energy consumption and carbon emission are much less
+                      than the NFT you see elsewhere, being nicer to our Eco
+                      system means a lot to us.
+                    </div>
+                  </div>
+                </div>
+                <div class="faq__item">
+                  <div class="faq__head" @click="activeFaqBody">
+                    {{ $t("faq.canFind") }}
+                    <svg
+                      t="1644292078472"
+                      class="arrow"
+                      viewBox="0 0 1024 1024"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      p-id="11216"
+                      width="32"
+                      height="32"
+                    >
+                      <path
+                        d="M740.522667 368.896a41.898667 41.898667 0 0 0-57.856 0L514.133333 529.408 345.6 368.896a41.898667 41.898667 0 0 0-57.856 60.586667l226.389333 216.149333 226.389334-216.064a41.898667 41.898667 0 0 0 0-60.586667z"
+                        fill="#8a8a8a"
+                        p-id="11217"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="faq__body">
+                    <div class="faq__content">
+                      If you have operated any change of your assets, you can
+                      simply press the button "Refresh Collections" in your Ting
+                      Museum personal page. Come back in a minutes and you will
+                      find that your data has synchronized.
+                    </div>
+                  </div>
+                </div>
+                <div class="faq__item">
+                  <div class="faq__head" @click="activeFaqBody">
+                    {{ $t("faq.whatTingMuseum") }}
+                    <svg
+                      t="1644292078472"
+                      class="arrow"
+                      viewBox="0 0 1024 1024"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      p-id="11216"
+                      width="32"
+                      height="32"
+                    >
+                      <path
+                        d="M740.522667 368.896a41.898667 41.898667 0 0 0-57.856 0L514.133333 529.408 345.6 368.896a41.898667 41.898667 0 0 0-57.856 60.586667l226.389333 216.149333 226.389334-216.064a41.898667 41.898667 0 0 0 0-60.586667z"
+                        fill="#8a8a8a"
+                        p-id="11217"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="faq__body">
+                    <div class="faq__content">
+                      {{ $t("faq.whatIsTingMuseum") }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="faq-js-tabs-item animate__animated animate__fadeIn"
+                id="f2"
+                style="display: none"
+              >
+                <div class="faq__item">
+                  <div class="faq__head" @click="activeFaqBody">
+                    {{ $t("faq.contact") }}
+                    <svg
+                      t="1644292078472"
+                      class="arrow"
+                      viewBox="0 0 1024 1024"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      p-id="11216"
+                      width="32"
+                      height="32"
+                    >
+                      <path
+                        d="M740.522667 368.896a41.898667 41.898667 0 0 0-57.856 0L514.133333 529.408 345.6 368.896a41.898667 41.898667 0 0 0-57.856 60.586667l226.389333 216.149333 226.389334-216.064a41.898667 41.898667 0 0 0 0-60.586667z"
+                        fill="#8a8a8a"
+                        p-id="11217"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="faq__body">
+                    <div class="faq__content">
+                      <table class="t1">
+                        <tr>
+                          <td width="25%">Twitter</td>
+                          <td>
+                            <a
+                              href="https://twitter.com/theTingDAO"
+                              target="_blank"
+                              >https://twitter.com/theTingDAO</a
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="25%">Instagram</td>
+                          <td>
+                            <a
+                              href="https://www.instagram.com/thetingDAO/"
+                              target="_blank"
+                              >https://www.instagram.com/thetingDAO/</a
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="25%">Discord</td>
+                          <td>
+                            <a
+                              href="https://discord.com/invite/G7SR5Yxy2R"
+                              target="_blank"
+                              >https://discord.com/invite/G7SR5Yxy2R</a
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="25%">Email</td>
+                          <td>info@icarusart.ai</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq__item">
+                  <div class="faq__head" @click="activeFaqBody">
+                    {{ $t("faq.supportIP") }}
+                    <svg
+                      t="1644292078472"
+                      class="arrow"
+                      viewBox="0 0 1024 1024"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      p-id="11216"
+                      width="32"
+                      height="32"
+                    >
+                      <path
+                        d="M740.522667 368.896a41.898667 41.898667 0 0 0-57.856 0L514.133333 529.408 345.6 368.896a41.898667 41.898667 0 0 0-57.856 60.586667l226.389333 216.149333 226.389334-216.064a41.898667 41.898667 0 0 0 0-60.586667z"
+                        fill="#8a8a8a"
+                        p-id="11217"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="faq__body">
+                    <div class="faq__content">
+                      <table class="t2">
+                        <tr>
+                          <td></td>
+                          <td class="td1">twitter</td>
+                          <td class="td2">discord</td>
+                        </tr>
+                        <tr>
+                          <td>MetaPunk 2.0</td>
+                          <td>
+                            <a
+                              href="https://twitter.com/MetaPunk2_0"
+                              target="_blank"
+                              >https://twitter.com/MetaPunk2_0</a
+                            >
+                          </td>
+                          <td>
+                            <a
+                              href="https://discord.gg/9qSKFVYh"
+                              target="_blank"
+                              >https://discord.gg/9qSKFVYh</a
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Breaking Panda</td>
+                          <td>
+                            <a
+                              href="https://twitter.com/BreakingPanda2"
+                              target="_blank"
+                              >https://twitter.com/BreakingPanda2</a
+                            >
+                          </td>
+                          <td>
+                            <a
+                              href="https://discord.gg/BFdxc4CM"
+                              target="_blank"
+                              >https://discord.gg/BFdxc4CM</a
+                            >
+                          </td>
+                        </tr>
+                      </table>
+
+                      <table class="t3">
+                        <tr>
+                          MetaPunk2.0
+                        </tr>
+                        <tr>
+                          <td class="td1">twitter</td>
+                          <td>
+                            <a
+                              href="https://twitter.com/MetaPunk2_0"
+                              target="_blank"
+                              >https://twitter.com/MetaPunk2_0</a
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td1">discord</td>
+                          <td>
+                            <a
+                              href="https://discord.gg/9qSKFVYh"
+                              target="_blank"
+                              >https://discord.gg/9qSKFVYh</a
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          Breaking Panda
+                        </tr>
+                        <tr>
+                          <td class="td1">twitter</td>
+                          <td>
+                            <a
+                              href="https://twitter.com/BreakingPanda2"
+                              target="_blank"
+                              >https://twitter.com/BreakingPanda2</a
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td1">discord</td>
+                          <td>
+                            <a
+                              href="https://discord.gg/BFdxc4CM"
+                              target="_blank"
+                              >https://discord.gg/BFdxc4CM</a
+                            >
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="joinAndFoot">
+      <div class="join">
+        <h1>Join The Community For Much More</h1>
+        <div class="icons">
+          <!-- <svg t="1638951023538" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" p-id="7059" width="32" height="32">
+                        <path
+                            d="M347.8 794.8c0 4-4.6 7.2-10.4 7.2-6.6 0.6-11.2-2.6-11.2-7.2 0-4 4.6-7.2 10.4-7.2 6-0.6 11.2 2.6 11.2 7.2z m-62.2-9c-1.4 4 2.6 8.6 8.6 9.8 5.2 2 11.2 0 12.4-4s-2.6-8.6-8.6-10.4c-5.2-1.4-11 0.6-12.4 4.6z m88.4-3.4c-5.8 1.4-9.8 5.2-9.2 9.8 0.6 4 5.8 6.6 11.8 5.2 5.8-1.4 9.8-5.2 9.2-9.2-0.6-3.8-6-6.4-11.8-5.8zM505.6 16C228.2 16 16 226.6 16 504c0 221.8 139.6 411.6 339 478.4 25.6 4.6 34.6-11.2 34.6-24.2 0-12.4-0.6-80.8-0.6-122.8 0 0-140 30-169.4-59.6 0 0-22.8-58.2-55.6-73.2 0 0-45.8-31.4 3.2-30.8 0 0 49.8 4 77.2 51.6 43.8 77.2 117.2 55 145.8 41.8 4.6-32 17.6-54.2 32-67.4-111.8-12.4-224.6-28.6-224.6-221 0-55 15.2-82.6 47.2-117.8-5.2-13-22.2-66.6 5.2-135.8 41.8-13 138 54 138 54 40-11.2 83-17 125.6-17s85.6 5.8 125.6 17c0 0 96.2-67.2 138-54 27.4 69.4 10.4 122.8 5.2 135.8 32 35.4 51.6 63 51.6 117.8 0 193-117.8 208.4-229.6 221 18.4 15.8 34 45.8 34 92.8 0 67.4-0.6 150.8-0.6 167.2 0 13 9.2 28.8 34.6 24.2C872.4 915.6 1008 725.8 1008 504 1008 226.6 783 16 505.6 16zM210.4 705.8c-2.6 2-2 6.6 1.4 10.4 3.2 3.2 7.8 4.6 10.4 2 2.6-2 2-6.6-1.4-10.4-3.2-3.2-7.8-4.6-10.4-2z m-21.6-16.2c-1.4 2.6 0.6 5.8 4.6 7.8 3.2 2 7.2 1.4 8.6-1.4 1.4-2.6-0.6-5.8-4.6-7.8-4-1.2-7.2-0.6-8.6 1.4z m64.8 71.2c-3.2 2.6-2 8.6 2.6 12.4 4.6 4.6 10.4 5.2 13 2 2.6-2.6 1.4-8.6-2.6-12.4-4.4-4.6-10.4-5.2-13-2z m-22.8-29.4c-3.2 2-3.2 7.2 0 11.8 3.2 4.6 8.6 6.6 11.2 4.6 3.2-2.6 3.2-7.8 0-12.4-2.8-4.6-8-6.6-11.2-4z"
+                            p-id="7060" fill="#ffffff"></path>
+                    </svg> -->
+          <svg
+            t="1638951078552"
+            class="icon"
+            viewBox="0 0 1024 1024"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            p-id="8560"
+            width="32"
+            height="32"
+            @click="openDiscord"
+          >
+            <path
+              d="M657.316864 151.7056c131.4816 0 242.176 90.0096 242.176 90.0096 131.4304 270.08 124.5184 505.5488 124.5184 505.5488-103.7824 138.496-262.912 124.672-262.912 124.672l-55.296-69.2736c96.8192-20.7872 152.1664-103.8848 152.1664-103.8848S712.664064 795.7504 512.062464 795.7504c-207.5648 0-345.9072-96.9728-345.9072-96.9728s62.2592 83.0976 152.2176 103.936L263.025664 871.936S103.896064 878.848 0.062464 747.264c0 0-6.912-235.4688 124.5184-505.5488 0 0 117.6064-90.0096 242.176-90.0096l13.824 13.824s-138.3936 41.5744-214.4768 110.7968c0 0 145.3056-90.0096 345.9072-90.0096 193.6896 0 338.944 83.0976 345.9072 90.0096-76.0832-69.2224-214.4768-110.7968-214.4768-110.7968l13.824-13.824z m-308.7872 307.2C298.712064 458.9056 256.062464 501.6064 256.062464 558.5408s42.6496 99.6864 92.4672 99.6864c49.7664 0 92.416-42.752 92.416-99.6864s-42.6496-99.6352-92.416-99.6352z m327.0656 0c-49.7664 0-92.416 42.7008-92.416 99.6352s42.6496 99.6864 92.416 99.6864c49.8176 0 92.4672-42.752 92.4672-99.6864-7.1168-56.9344-42.6496-99.6352-92.4672-99.6352z"
+              p-id="8561"
+              fill="#ffffff"
+            ></path>
+          </svg>
+          <svg
+            t="1638951101299"
+            class="icon"
+            viewBox="0 0 1024 1024"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            p-id="9412"
+            width="32"
+            height="32"
+            @click="openTwitter"
+          >
+            <path
+              d="M928 254.3c-30.6 13.2-63.9 22.7-98.2 26.4 35.4-21.1 62.3-54.4 75-94-32.7 19.5-69.7 33.8-108.2 41.2C765.4 194.6 721.1 174 672 174c-94.5 0-170.5 76.6-170.5 170.6 0 13.2 1.6 26.4 4.2 39.1-141.5-7.4-267.7-75-351.6-178.5-14.8 25.4-23.2 54.4-23.2 86.1 0 59.2 30.1 111.4 76 142.1-28-1.1-54.4-9-77.1-21.7v2.1c0 82.9 58.6 151.6 136.7 167.4-14.3 3.7-29.6 5.8-44.9 5.8-11.1 0-21.6-1.1-32.2-2.6C211 652 273.9 701.1 348.8 702.7c-58.6 45.9-132 72.9-211.7 72.9-14.3 0-27.5-0.5-41.2-2.1C171.5 822 261.2 850 357.8 850 671.4 850 843 590.2 843 364.7c0-7.4 0-14.8-0.5-22.2 33.2-24.3 62.3-54.4 85.5-88.2z"
+              p-id="9413"
+              fill="#ffffff"
+            ></path>
+          </svg>
+          <svg
+            t="1638951122724"
+            class="icon"
+            viewBox="0 0 1024 1024"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            p-id="10268"
+            width="32"
+            height="32"
+            @click="openInstagram"
+          >
+            <path
+              d="M512 306.9c-113.5 0-205.1 91.6-205.1 205.1S398.5 717.1 512 717.1 717.1 625.5 717.1 512 625.5 306.9 512 306.9z m0 338.4c-73.4 0-133.3-59.9-133.3-133.3S438.6 378.7 512 378.7 645.3 438.6 645.3 512 585.4 645.3 512 645.3zM725.5 250.7c-26.5 0-47.9 21.4-47.9 47.9s21.4 47.9 47.9 47.9 47.9-21.3 47.9-47.9c-0.1-26.6-21.4-47.9-47.9-47.9z"
+              p-id="10269"
+              fill="#ffffff"
+            ></path>
+            <path
+              d="M911.8 512c0-55.2 0.5-109.9-2.6-165-3.1-64-17.7-120.8-64.5-167.6-46.9-46.9-103.6-61.4-167.6-64.5-55.2-3.1-109.9-2.6-165-2.6-55.2 0-109.9-0.5-165 2.6-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-0.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6 46.9 46.9 103.6 61.4 167.6 64.5 55.2 3.1 109.9 2.6 165 2.6 55.2 0 109.9 0.5 165-2.6 64-3.1 120.8-17.7 167.6-64.5 46.9-46.9 61.4-103.6 64.5-167.6 3.2-55.1 2.6-109.8 2.6-165z m-88 235.8c-7.3 18.2-16.1 31.8-30.2 45.8-14.1 14.1-27.6 22.9-45.8 30.2C695.2 844.7 570.3 840 512 840c-58.3 0-183.3 4.7-235.9-16.1-18.2-7.3-31.8-16.1-45.8-30.2-14.1-14.1-22.9-27.6-30.2-45.8C179.3 695.2 184 570.3 184 512c0-58.3-4.7-183.3 16.1-235.9 7.3-18.2 16.1-31.8 30.2-45.8s27.6-22.9 45.8-30.2C328.7 179.3 453.7 184 512 184s183.3-4.7 235.9 16.1c18.2 7.3 31.8 16.1 45.8 30.2 14.1 14.1 22.9 27.6 30.2 45.8C844.7 328.7 840 453.7 840 512c0 58.3 4.7 183.2-16.2 235.8z"
+              p-id="10270"
+              fill="#ffffff"
+            ></path>
+          </svg>
+        </div>
+      </div>
+      <Footer></Footer>
+    </div>
+  </div>
+</template>
+
+<script>
+// import $ from "jquery";
+import Header from "../components/header.vue";
+import Footer from "../components/footer.vue";
+export default {
+  props: ["time"],
+  data() {
+    return {
+      showGeneral: true,
+      showSupport: false,
+    };
+  },
+  components: {
+    Header,
+    Footer,
+  },
+  methods: {
+    openDiscord() {
+      window.open("https://discord.gg/G7SR5Yxy2R", "_blank");
+    },
+    openTwitter() {
+      window.open("https://twitter.com/theTingDAO", "_blank");
+    },
+    openInstagram() {
+      window.open("https://www.instagram.com/thetingdao/", "_blank");
+    },
+    activeFaqBody(e) {
+      $(e.target).toggleClass("active");
+      $(e.target)
+        .children(".arrow")
+        .toggleClass("active");
+      $(e.target)
+        .next()
+        .stop()
+        .slideToggle();
+    },
+    activeGeneral() {
+      this.showGeneral = true;
+      this.showSupport = false;
+      $("#f1").show();
+      $("#f2").hide();
+      $(".left__general").addClass("active");
+      $(".left__general").removeClass("commonGS");
+      $(".left__support").removeClass("active");
+      $(".left__support").addClass("commonGS");
+    },
+    activeSupport() {
+      this.showGeneral = false;
+      this.showSupport = true;
+      $("#f1").hide();
+      $("#f2").show();
+      $(".left__support").addClass("active");
+      $(".left__support").removeClass("commonGS support");
+      $(".left__general").removeClass("general active");
+      $(".left__general").addClass("commonGS");
+    },
+  },
+};
+</script>
+
+<style lang="less" scoped>
+@import "~@/assets/stylesheet/faq.less";
+</style>

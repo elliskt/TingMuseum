@@ -1,0 +1,592 @@
+body {
+    margin: 0px;
+    /* overflow: scroll; */
+    background: #f0f0f0;
+}
+
+a {
+    text-decoration: none;
+}
+
+#container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    cursor: grab;
+}
+
+#container:active {
+    cursor: grabbing;
+}
+
+
+/*加载器*/
+
+.simple-preloader-text {
+    font-family: "微软雅黑";
+    color: black;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: .09375rem;
+    text-align: center;
+    width: 9.6875rem;
+    transform: scaleY(0.9);
+    /*-webkit-animation: fade 2s infinite;*/
+    /*-moz-animation: fade 2s infinite; */
+}
+
+
+/* 修改了loading之后的版本 */
+
+
+/* #simple-preloader-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #141316;
+    pointer-events: none;
+    cursor: default;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+} */
+
+
+/* 原始版本 */
+
+#simple-preloader-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #141316;
+    pointer-events: none;
+    cursor: default;
+    display: flex;
+    align-items: center;
+    z-index: 5000;
+}
+
+
+/* 修改loading之后的版本 */
+
+
+/* #simple-preloader-background .background-content {
+    margin: auto;
+    height: 10rem;
+    width: 10rem;
+    position: relative;
+    z-index: 1000;
+    border-color: #141316;
+} */
+
+
+/* 原始版本 */
+
+#simple-preloader-background .background-content {
+    margin: auto;
+    height: 10rem;
+    width: 10rem;
+    position: relative;
+    border-color: #141316;
+}
+
+#simple-preloader-background .background-content img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+#simple-preloader-background .background-content img:first-child {
+    animation: mymove 2.5s infinite linear;
+}
+
+#simple-preloader-background .background-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    margin: 0;
+    height: .875rem;
+    line-height: .875rem;
+    font-size: .875rem;
+}
+
+#simple-preloader-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 11.25rem;
+    height: auto;
+    vertical-align: middle;
+}
+
+#simple-preloader-container p {
+    color: #fff;
+}
+
+.stick {
+    width: 1.875rem;
+    height: .1875rem;
+    background: #fff;
+    display: inline-block;
+    margin-left: -0.5rem;
+}
+
+.stick:nth-child(n) {
+    transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    /* IE 9 */
+    -webkit-transform: rotate(30deg);
+    /* Safari and Chrome */
+    -moz-transform: rotate(30deg);
+    -webkit-animation: fall 2s infinite;
+    -moz-animation: fall 2s infinite;
+}
+
+.stick:nth-child(2n) {
+    transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-30deg);
+    /* Safari and Chrome */
+    -moz-transform: rotate(-30deg);
+    -webkit-animation: rise 2s infinite;
+    -moz-animation: rise 2s infinite;
+}
+
+
+/* 作品信息 */
+
+.msgBox {
+    display: none;
+    position: absolute;
+    bottom: 9.1875rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 999;
+    font-family: "tingMuseum";
+}
+
+@media (max-width:500px) {
+    .msgBox {
+        left: 15.6%;
+        transform: translateX(-25%);
+    }
+}
+
+.closeBtn {
+    display: inline-block;
+    height: 2.5rem;
+    width: 2.5rem;
+    cursor: pointer;
+    background: url(../assets/images/closebtn.png) center/100% no-repeat;
+    position: absolute;
+    top: .3125rem;
+    right: .3125rem;
+}
+
+.msgBox p {
+    font-size: .875rem;
+    padding: .3125rem .9375rem;
+    margin: 0;
+}
+
+.msgBox>div:first-child {
+    background-color: #000;
+    color: #fff;
+    height: 3.125rem;
+    line-height: 3.125rem;
+}
+
+.msgBox>div:first-child span {
+    width: 100%;
+    display: block;
+    padding: 0;
+    text-align: center;
+    font-size: .875rem;
+}
+
+.msgBox>div.content {
+    padding: 1.25rem;
+    text-align: center;
+}
+
+.msgBox>div.content p span:last-child {
+    padding-left: .625rem;
+}
+
+
+/* 图片展示框 */
+
+#imgBox {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255, 80%);
+    display: flex;
+    align-items: center;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+    z-index: 999;
+    justify-content: space-evenly;
+}
+
+#imgBox.showpage {
+    transform: translateY(0);
+}
+
+#imgBox img,
+#imgBox video {
+    display: block;
+    max-height: 80%;
+    max-width: 31.25rem;
+}
+
+#imgBox .mmsgBox {
+    padding: 0 1.25rem;
+    height: 85%;
+    align-items: center;
+    justify-content: space-evenly !important;
+    max-width: 34.375rem;
+    display: block;
+    word-break: normal;
+}
+
+#imgBox .mmsgBox span {
+    display: block;
+    text-align: center;
+}
+
+#imgBox .mmsgBox .i1 {
+    margin-bottom: 20px !important;
+}
+
+#imgBox .mmsgBox .i3 {
+    text-align: left;
+}
+
+#imgBox video {
+    display: none;
+}
+
+.imgBoxc {
+    height: 100%;
+    background: #141316;
+}
+
+video::-webkit-media-controls-fullscreen-button {
+    display: none;
+}
+
+@keyframes mymove {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes mymove
+/*Safari and Chrome*/
+
+{
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes rise {
+    50% {
+        transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+        /* IE 9 */
+        -webkit-transform: rotate(30deg);
+        -moz-transform: rotate(30deg);
+    }
+}
+
+@-moz-keyframes rise {
+    50% {
+        transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+        /* IE 9 */
+        -webkit-transform: rotate(30deg);
+        -moz-transform: rotate(30deg);
+    }
+}
+
+@-o-keyframes rise {
+    50% {
+        transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+        /* IE 9 */
+        -webkit-transform: rotate(30deg);
+        -moz-transform: rotate(30deg);
+    }
+}
+
+@keyframes rise {
+    50% {
+        transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+        /* IE 9 */
+        -webkit-transform: rotate(30deg);
+        -moz-transform: rotate(30deg);
+    }
+}
+
+@-webkit-keyframes fall {
+    50% {
+        transform: rotate(-30deg);
+        -ms-transform: rotate(-30deg);
+        /* IE 9 */
+        -webkit-transform: rotate(-30deg);
+        -moz-transform: rotate(30deg);
+    }
+}
+
+@-moz-keyframes fall {
+    50% {
+        transform: rotate(-30deg);
+        -ms-transform: rotate(-30deg);
+        /* IE 9 */
+        -webkit-transform: rotate(-30deg);
+        -moz-transform: rotate(-30deg);
+    }
+}
+
+@-o-keyframes fall {
+    50% {
+        transform: rotate(-30deg);
+        -ms-transform: rotate(-30deg);
+        /* IE 9 */
+        -webkit-transform: rotate(-30deg);
+        -moz-transform: rotate(30deg);
+    }
+}
+
+@keyframes fall {
+    50% {
+        transform: rotate(-30deg);
+        -ms-transform: rotate(-30deg);
+        /* IE 9 */
+        -webkit-transform: rotate(-30deg);
+        -moz-transform: rotate(30deg);
+    }
+}
+
+@-webkit-keyframes fade {
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fade {
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fade {
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/*加载器结束*/
+
+.v3d-annotation {
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+    width: auto;
+    min-width: .875rem;
+    height: 1.625rem;
+    padding: .125rem 0.5rem;
+    border: 0px solid transparent;
+    border-radius: 0;
+    font-size: 2.25rem;
+    font-family: sans-serif;
+    line-height: 1.625rem;
+    text-align: center;
+    user-select: none;
+    background: transparent;
+    cursor: pointer;
+    color: #dfb07a;
+}
+
+.v3d-annotation-transparent {
+    opacity: 0.2;
+}
+
+
+/*WebGL报错提示*/
+
+.v3d-webgl-error {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%;
+    height: 100%;
+    color: #333333;
+    background: rgba(0, 0, 0, 0.75);
+    text-align: center;
+    border-style: solid;
+    border-width: 0;
+    border-radius: 0;
+    border-color: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: sans-serif;
+    line-height: 30px;
+    padding: 10px 60px;
+    z-index: 999;
+    display: block;
+}
+
+.v3d-webgl-error-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: auto;
+    background: white;
+    padding: 30px 0px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.v3d-webgl-error-link {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #333333;
+    font-size: 12px;
+    margin-top: 30px;
+    width: 120px;
+}
+
+.v3d-webgl-error-link button {
+    background: #333333;
+    padding: 5px 25px;
+    color: white;
+    cursor: pointer;
+    border-radius: 2px;
+    border-width: 1px;
+    position: relative;
+    width: 120px;
+    font-size: 12px;
+    user-select: none;
+}
+
+.v3d-webgl-error-link button:hover {
+    background: #000000;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 540px) {
+    .v3d-webgl-error-container {
+        width: 60%;
+    }
+}
+
+
+/*WebGL报错提示-结束*/
+
+
+/* removes tap blinking on ios devices */
+
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+/* Animation keys */
+
+@keyframes hide {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes narrow {
+    0% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes enlarge {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #simple-preloader-container {
+        transform: translate(-50%, -50%) scale(0.7);
+    }
+}
+
+
+/* #info1{
+  color: #000;
+  font-size: 36px;
+} */

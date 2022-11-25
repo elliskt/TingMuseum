@@ -1,0 +1,1493 @@
+.home {
+  width: 100%;
+  // height: 100%;
+  transition: all 0.5s;
+  overflow-x: hidden;
+  // overflow-y: auto;
+  font-family: "HelveticaNeue";
+  background-color: #fff !important;
+
+
+  & .howitworks {
+    background: no-repeat center bottom;
+    background-image: url("../../assets/TT/切图/2x/资源 6@2x.png");
+    background-size: 80%;
+    width: 100%;
+    height: 30rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #f2f2f2;
+
+    & h1 {
+      font-family: "MyriadConcept";
+      color: black;
+      font-size: 2.8rem;
+      margin-top: 2.5rem;
+      text-align: center;
+      position: relative;
+      display: flex;
+      justify-content: center;
+
+      & svg {
+        margin-left: 10px;
+        cursor: pointer;
+        transition: all ease 0.3s;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+
+    & .videoTutorial {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      height: 2rem;
+
+      & .vt {
+        width: 11rem;
+        height: 1.2rem;
+        background-color: red;
+        text-align: center;
+        background: linear-gradient(180deg, #cb3494 0%, #ffad3d 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        text-align: center;
+        text-decoration: underline;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      & .underLine {
+        width: 6.5rem;
+        background: linear-gradient(180deg, #cb3494 0%, #ffad3d 100%);
+        height: 2px;
+      }
+    }
+
+    & .howItWorks_TwoBoxes__Container {
+      width: 90rem;
+      height: 70%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+
+      & .upperBox {
+        width: 100%;
+        height: 50%;
+        display: flex;
+
+        & .wallet,
+        .nft,
+        .chooseMuseum,
+        .decorate,
+        .share {
+          width: 16%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex: 1 1 auto;
+          overflow: hidden;
+
+          & img {
+            transform: scale(0.5);
+          }
+        }
+
+        & .arrow {
+          width: 6%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          & img {
+            transform: scale(0.5);
+          }
+        }
+      }
+
+      & .bottomBox {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        color: rgb(163, 163, 163);
+
+        & .walletText,
+        .nftText,
+        .chooseMuseumText,
+        .decorateText,
+        .shareText {
+          width: 16%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex: 1 1 auto;
+        }
+
+        & .walletText {
+          & p {
+            width: 80%;
+            height: 50%;
+            text-align: center;
+            vertical-align: middle;
+          }
+        }
+
+        & .nftText {
+          & p {
+            width: 100%;
+            height: 50%;
+            text-align: center;
+            vertical-align: middle;
+          }
+        }
+
+        & .chooseMuseumText {
+          & p {
+            width: 100%;
+            height: 50%;
+            text-align: center;
+            vertical-align: middle;
+          }
+        }
+
+        & .decorateText {
+          & p {
+            width: 100%;
+            height: 50%;
+            text-align: center;
+            vertical-align: middle;
+          }
+        }
+
+        & .shareText {
+          & p {
+            width: 100%;
+            height: 50%;
+            text-align: center;
+            vertical-align: middle;
+          }
+        }
+
+        & .arrowBoxWithNothing {
+          width: 6%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  & .mostnotableMuseums {
+    // height: 80%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // max-width: 90rem;
+    margin: 0 auto;
+    height: 46rem;
+    width: 100%;
+
+    & h1 {
+      font-family: "MyriadConcept";
+      font-size: 2.8rem;
+      margin-top: 2.5rem;
+    }
+
+    & p {
+      font-family: "HelveticaNeueLTPro-Bd";
+      color: #8d8d8d !important;
+    }
+
+    & .btnContainer {
+      font-family: "HelveticaNeue";
+      width: 56rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      color: #fff;
+      margin-bottom: 3rem;
+      margin-top: 2rem;
+
+      & .space {
+        background: linear-gradient(to right, #d10cc8, #fd3e1a);
+        border-radius: 4px;
+
+        box-sizing: border-box;
+        width: 17rem;
+        height: 2rem;
+        cursor: pointer;
+
+        & span {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: bolder;
+        }
+      }
+
+      & .spaceBtn.active {
+        background: linear-gradient(to right, #d10cc8, #fd3e1a);
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        width: 17rem;
+        height: 2rem;
+        cursor: pointer;
+
+        & span {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: bolder;
+        }
+      }
+
+      & .galleryBtn.active {
+        background: linear-gradient(to right, #d10cc8, #fd3e1a);
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        width: 17rem;
+        height: 2rem;
+        cursor: pointer;
+
+        & span {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: bolder;
+        }
+      }
+
+      & .cyberpunkBtn.active {
+        background: linear-gradient(to right, #d10cc8, #fd3e1a);
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        width: 17rem;
+        height: 2rem;
+        cursor: pointer;
+
+        & span {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: bolder;
+        }
+      }
+
+      & .commonBtn {
+        border-radius: 4px;
+        border: 1px solid #c5c5c5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        width: 17rem;
+        height: 2rem;
+        cursor: pointer;
+        color: #606a6e;
+
+        & span {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: bolder;
+        }
+      }
+
+      & .gallery {
+        border-radius: 4px;
+        border: 1px solid #c5c5c5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        width: 17rem;
+        height: 2rem;
+        cursor: pointer;
+        color: #606a6e;
+
+        & span {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: bolder;
+        }
+      }
+
+      & .cyberpunk {
+        border-radius: 4px;
+        border: 1px solid #c5c5c5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        width: 17rem;
+        height: 2rem;
+        cursor: pointer;
+        color: #606a6e;
+
+        & span {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: bolder;
+        }
+      }
+    }
+
+    & .mostnotableMuseums__item__container {
+      margin: 0 auto;
+      width: calc(100% - 100px);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      & .loadMoreBtn__container {
+        width: 100%;
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & .loadMoreBtn {
+          width: 11.238rem;
+          height: 2.25rem;
+          color: #999999;
+          font-family: "HelveticaNeue";
+          border: 1px solid #cdcdcd;
+          border-radius: 4px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-sizing: border-box;
+          cursor: pointer;
+        }
+      }
+
+      & .mostnotableMuseums__item {
+        border-radius: 10px;
+        width: 32%;
+        height: 14rem;
+        position: relative;
+        margin-bottom: 1.8rem;
+        cursor: pointer;
+        transition: all ease 0.3s;
+        overflow: hidden;
+
+        &:hover {
+          transition: all ease 0.3s;
+          transform: translateY(-5px);
+          box-shadow: 5px 5px 10px 10px rgb(235, 232, 232);
+        }
+
+        & .banner {
+          width: 100%;
+          height: 100%;
+          border-radius: 10px;
+          object-fit: cover;
+          -webkit-user-drag: none;
+        }
+
+        & .mostnotableMuseums__item__info {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 40%;
+          background-color: rgba(0, 0, 0, 0.7);
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          box-sizing: border-box;
+          padding: 0 0 0 5%;
+          border-radius: 0 0 10px 10px;
+
+          & .mostnotableMuseums__item__left {
+            color: white;
+            font-family: "MyriadConcept";
+            font-size: 1.5rem;
+            margin-right: 2%;
+          }
+
+          & .mostnotableMuseums__item__left__ske_mname {
+            width: 50%;
+          }
+
+          & .mostnotableMuseums__item__right__ske__right {
+            display: flex;
+            align-items: center;
+            width: 40%;
+            height: 60%;
+
+            & .mostnotableMuseums__item__right__avatar__ske_avatar {
+              border-radius: 50%;
+              width: 32px;
+              height: 32px;
+            }
+
+            & .mostnotableMuseums__item__right__detail__ske__detail {
+              display: flex;
+              flex-direction: column;
+              width: 80%;
+              height: 100%;
+              justify-content: space-evenly;
+              align-items: center;
+
+              & .mostnotableMuseums__item__right__detailName__ske_mname {
+                width: 80%;
+                margin-bottom: 1%;
+              }
+
+              & .mostnotableMuseums__item__right__detailAddress__ske_mname {
+                width: 80%;
+              }
+            }
+          }
+
+          & .mostnotableMuseums__item__right {
+            display: flex;
+            color: white;
+            font-family: "HelveticaNeueLTPro-Bd";
+            overflow: hidden;
+
+            & .mostnotableMuseums__item__right__avatar {
+              border-radius: 50%;
+              width: 32px;
+              height: 32px;
+              margin-right: 0.5rem;
+              -webkit-user-drag: none;
+            }
+
+            & .mostnotableMuseums__item__right__detail {
+              display: flex;
+              flex-direction: column;
+
+              & .mostnotableMuseums__item__right__detailName {
+                width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+              }
+
+              & .mostnotableMuseums__item__right__detailAddress {
+                width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  & .join {
+    width: 100%;
+    // max-width: 90rem;
+    height: 15rem;
+    background-color: #1c1c20;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-top: 8rem;
+
+    & h1 {
+      font-family: "MyriadConcept";
+      font-size: 2.5rem;
+    }
+
+    & .icons {
+      width: 15rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      & svg {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .nav {
+    max-height: 38.5625rem;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    // margin-bottom: 8%;
+    .navImg {
+      width: 100%;
+      object-fit: cover;
+      // max-width: 90rem;
+      margin: 0 auto;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .navImgMorning {
+      width: 100%;
+      object-fit: cover;
+      // max-width: 90rem;
+      margin: 0 auto;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .navMaskMorning {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: rgba(0, 0, 0, 0);
+      text-align: center;
+
+      .nav-container {
+        position: absolute;
+        top: 36%;
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+
+        h4 {
+          color: #818181;
+          font-size: 2rem;
+          font-weight: bold;
+        }
+
+        .navGo {
+          position: absolute;
+          color: #918787;
+          border: 2px solid #777e90;
+          border-radius: 5.625rem;
+          left: 50%;
+          transform: translateX(-50%);
+          margin-top: 2rem;
+          width: 10rem;
+          padding: 0.75rem 0;
+          font-size: 0.875rem;
+          cursor: pointer;
+          transition: all 0.6s;
+
+          &:hover {
+            background: #3772ff;
+            border-color: transparent;
+          }
+        }
+      }
+    }
+
+    .navMaskNight {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: rgba(0, 0, 0, 0);
+
+      text-align: center;
+
+      .nav-container {
+        position: absolute;
+        top: 36%;
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+
+        h4 {
+          color: #818181;
+          font-size: 2rem;
+          font-weight: bold;
+        }
+
+        .navGo {
+          position: absolute;
+          color: #918787;
+          border: 2px solid #777e90;
+          border-radius: 5.625rem;
+          left: 50%;
+          transform: translateX(-50%);
+          margin-top: 2rem;
+          width: 10rem;
+          padding: 0.75rem 0;
+          font-size: 0.875rem;
+          cursor: pointer;
+          transition: all 0.6s;
+
+          &:hover {
+            background: #3772ff;
+            border-color: transparent;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .home {
+    & .mostnotableMuseums {
+      height: 62rem;
+
+      & .btnContainer {
+        font-family: "HelveticaNeueLTPro-Bd";
+        width: 48rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        color: #fff;
+        margin-bottom: 3rem;
+        margin-top: 2rem;
+
+        & .space {
+          background: linear-gradient(to right, #d10cc8, #fd3e1a);
+          border-radius: 4px;
+          padding: 1.2% 0 0.2% 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-sizing: border-box;
+          width: 15rem;
+          cursor: pointer;
+          font-size: 0.9rem;
+        }
+
+        & .gallery {
+          border-radius: 4px;
+          border: 1px solid #c5c5c5;
+          padding: 1.2% 3% 0.2% 3%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-sizing: border-box;
+          width: 15rem;
+          font-size: 0.9rem;
+
+          cursor: pointer;
+          color: #606a6e;
+        }
+
+        & .cyberpunk {
+          border-radius: 4px;
+          border: 1px solid #c5c5c5;
+          padding: 1.2% 3% 0.2% 3%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-sizing: border-box;
+          width: 15rem;
+          cursor: pointer;
+          font-size: 0.9rem;
+
+          color: #606a6e;
+        }
+
+        & .spaceBtn.active {
+          background: linear-gradient(to right, #d10cc8, #fd3e1a);
+          border-radius: 4px;
+          padding: 1.2% 0 0.2% 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-sizing: border-box;
+          width: 15rem;
+          cursor: pointer;
+          font-size: 0.9rem;
+        }
+
+        & .galleryBtn.active {
+          background: linear-gradient(to right, #d10cc8, #fd3e1a);
+          border-radius: 4px;
+          padding: 1.2% 0 0.2% 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-sizing: border-box;
+          width: 15rem;
+          cursor: pointer;
+          font-size: 0.9rem;
+        }
+
+        & .cyberpunkBtn.active {
+          background: linear-gradient(to right, #d10cc8, #fd3e1a);
+          border-radius: 4px;
+          padding: 1.2% 0 0.2% 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-sizing: border-box;
+          width: 15rem;
+          cursor: pointer;
+          font-size: 0.9rem;
+        }
+
+        & .commonBtn {
+          border-radius: 4px;
+          border: 1px solid #c5c5c5;
+          padding: 1.2% 3% 0.2% 3%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-sizing: border-box;
+          width: 15rem;
+          cursor: pointer;
+          font-size: 0.9rem;
+
+          color: #606a6e;
+        }
+      }
+
+      & .mostnotableMuseums__item__container {
+        margin: 0 auto;
+        width: 98%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        & .mostnotableMuseums__item {
+          width: 42%;
+          height: 14rem;
+          position: relative;
+          margin-bottom: 1.8rem;
+
+          & .banner {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+
+          & .mostnotableMuseums__item__info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 40%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-sizing: border-box;
+            padding: 0 0 0 5%;
+
+            & .mostnotableMuseums__item__left {
+              color: white;
+              font-family: "MyriadConcept";
+              font-size: 1.5rem;
+            }
+
+            & .mostnotableMuseums__item__right {
+              display: flex;
+              color: white;
+              font-family: "HelveticaNeueLTPro-Bd";
+
+              & .mostnotableMuseums__item__right__avatar {
+                border-radius: 50%;
+                width: 32px;
+                height: 32px;
+                margin-right: 0.5rem;
+              }
+
+              & .mostnotableMuseums__item__right__detail {
+                display: flex;
+                flex-direction: column;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .home {
+    & .mostnotableMuseums {
+      & .mostnotableMuseums__item__container {
+        & .mostnotableMuseums__item {
+          & .mostnotableMuseums__item__info {
+            & .mostnotableMuseums__item__right {
+              & .mostnotableMuseums__item__right__detail {
+                & .mostnotableMuseums__item__right__detailName {
+                  width: 100%;
+                }
+
+                & .mostnotableMuseums__item__right__detailAddress {
+                  width: 90%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1166px) {
+  .home {
+    & .mostnotableMuseums {
+      & .mostnotableMuseums__item__container {
+        & .mostnotableMuseums__item {
+          & .mostnotableMuseums__item__info {
+            & .mostnotableMuseums__item__right {
+              & .mostnotableMuseums__item__right__detail {
+                & .mostnotableMuseums__item__right__detailName {
+                  width: 100%;
+                }
+
+                & .mostnotableMuseums__item__right__detailAddress {
+                  width: 70%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .home {
+    & .mostnotableMuseums {
+      height: 110rem;
+
+      .mostnotableMuseums__item__container {
+        margin: 0 auto;
+        width: 98%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        & .mostnotableMuseums__item {
+          width: 100%;
+          height: 14rem;
+          position: relative;
+          margin-bottom: 1.8rem;
+
+          & .banner {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+
+          & .mostnotableMuseums__item__info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 40%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-sizing: border-box;
+            padding: 0 0 0 5%;
+
+            & .mostnotableMuseums__item__left {
+              color: white;
+              font-family: "MyriadConcept";
+              font-size: 1.5rem;
+            }
+
+            & .mostnotableMuseums__item__right {
+              display: flex;
+              color: white;
+              font-family: "HelveticaNeueLTPro-Bd";
+
+              & .mostnotableMuseums__item__right__avatar {
+                border-radius: 50%;
+                width: 32px;
+                height: 32px;
+                margin-right: 0.5rem;
+              }
+
+              & .mostnotableMuseums__item__right__detail {
+                display: flex;
+                flex-direction: column;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1048px) {
+  .home {
+    & .mostnotableMuseums {
+      & .mostnotableMuseums__item__container {
+        & .mostnotableMuseums__item {
+          & .mostnotableMuseums__item__info {
+            & .mostnotableMuseums__item__right {
+              & .mostnotableMuseums__item__right__detail {
+                & .mostnotableMuseums__item__right__detailName {
+                  width: 100%;
+                }
+
+                & .mostnotableMuseums__item__right__detailAddress {
+                  width: 60%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 777px) {
+  .home {
+    & .mostnotableMuseums {
+      & .btnContainer {
+        font-family: "HelveticaNeueLTPro-Bd";
+        width: 45rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        color: #fff;
+        margin-bottom: 3rem;
+        margin-top: 2rem;
+
+        & .space {
+          background: linear-gradient(to right, #d10cc8, #fd3e1a);
+          border-radius: 4px;
+          padding: 1.2% 0 0.2% 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-sizing: border-box;
+          width: 13rem;
+          height: 3rem;
+          cursor: pointer;
+          font-size: 0.9rem;
+        }
+
+        & .gallery {
+          border-radius: 4px;
+          border: 1px solid #c5c5c5;
+          padding: 1.2% 3% 0.2% 3%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-sizing: border-box;
+          width: 13rem;
+          font-size: 0.9rem;
+          height: 3rem;
+
+          cursor: pointer;
+          color: #606a6e;
+        }
+
+        & .cyberpunk {
+          border-radius: 4px;
+          border: 1px solid #c5c5c5;
+          padding: 1.2% 0 0.2% 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-sizing: border-box;
+          width: 13rem;
+          cursor: pointer;
+          font-size: 0.9rem;
+          height: 3rem;
+          text-align: center;
+          color: #606a6e;
+        }
+
+        & .spaceBtn.active {
+          background: linear-gradient(to right, #d10cc8, #fd3e1a);
+          border-radius: 4px;
+          padding: 1.2% 0 0.2% 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-sizing: border-box;
+          width: 13rem;
+          height: 3rem;
+          cursor: pointer;
+          font-size: 0.9rem;
+        }
+
+        & .galleryBtn.active {
+          background: linear-gradient(to right, #d10cc8, #fd3e1a);
+          border-radius: 4px;
+          padding: 1.2% 0 0.2% 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-sizing: border-box;
+          width: 13rem;
+          height: 3rem;
+          cursor: pointer;
+          font-size: 0.9rem;
+        }
+
+        & .cyberpunkBtn.active {
+          background: linear-gradient(to right, #d10cc8, #fd3e1a);
+          border-radius: 4px;
+          padding: 1.2% 0 0.2% 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-sizing: border-box;
+          width: 13rem;
+          height: 3rem;
+          cursor: pointer;
+          font-size: 0.9rem;
+        }
+
+        & .commonBtn {
+          border-radius: 4px;
+          border: 1px solid #c5c5c5;
+          padding: 1.2% 3% 0.2% 3%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-sizing: border-box;
+          width: 13rem;
+          cursor: pointer;
+          font-size: 0.9rem;
+          height: 3rem;
+          text-align: center;
+          color: #606a6e;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .home {
+    & .mostnotableMuseums {
+      height: 110rem;
+
+      & .btnContainer {
+        font-family: "HelveticaNeueLTPro-Bd";
+        width: 34rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #fff;
+        margin-bottom: 3rem;
+        margin-top: 2rem;
+
+        & .space {
+          background: linear-gradient(to right, #d10cc8, #fd3e1a);
+          border-radius: 4px;
+          display: flex;
+          align-items: center;
+          box-sizing: border-box;
+          width: 10rem;
+          cursor: pointer;
+          text-align: center;
+        }
+
+        & .gallery {
+          border-radius: 4px;
+          border: 1px solid #c5c5c5;
+          display: flex;
+          align-items: center;
+          box-sizing: border-box;
+          width: 10rem;
+          cursor: pointer;
+          text-align: center;
+          color: #606a6e;
+        }
+
+        & .cyberpunk {
+          border-radius: 4px;
+          border: 1px solid #c5c5c5;
+          display: flex;
+          align-items: center;
+          box-sizing: border-box;
+          width: 10rem;
+          cursor: pointer;
+          text-align: center;
+          color: #606a6e;
+        }
+
+        & .spaceBtn.active {
+          background: linear-gradient(to right, #d10cc8, #fd3e1a);
+          border-radius: 4px;
+          border: 1px solid #fff;
+          display: flex;
+          align-items: center;
+          box-sizing: border-box;
+          width: 10rem;
+          cursor: pointer;
+          text-align: center;
+          padding: 1.2% 3% 0.2% 3%;
+        }
+
+        & .galleryBtn.active {
+          background: linear-gradient(to right, #d10cc8, #fd3e1a);
+          border-radius: 4px;
+          display: flex;
+          align-items: center;
+          box-sizing: border-box;
+          width: 10rem;
+          cursor: pointer;
+          text-align: center;
+          border: 1px solid white;
+        }
+
+        & .cyberpunkBtn.active {
+          background: linear-gradient(to right, #d10cc8, #fd3e1a);
+          border-radius: 4px;
+          display: flex;
+          align-items: center;
+          box-sizing: border-box;
+          width: 10rem;
+          cursor: pointer;
+          border: 1px solid white;
+          text-align: center;
+        }
+
+        & .commonBtn {
+          border-radius: 4px;
+          border: 1px solid #c5c5c5;
+          display: flex;
+          align-items: center;
+          box-sizing: border-box;
+          width: 10rem;
+          cursor: pointer;
+          text-align: center;
+          color: #606a6e;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .home {
+    .join {
+      width: 100%;
+      // max-width: 90rem;
+      height: 15rem;
+      background-color: #1c1c20;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+      margin-top: 8rem;
+
+      & h1 {
+        font-family: "MyriadConcept";
+        font-size: 2rem;
+      }
+
+      & .icons {
+        width: 15rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .home {
+    & .mostnotableMuseums {
+      & .btnContainer {
+        font-family: "HelveticaNeueLTPro-Bd";
+        width: 30rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        color: #fff;
+        margin-bottom: 3rem;
+
+        & .space {
+          background: linear-gradient(to right, #d10cc8, #fd3e1a);
+          border-radius: 4px;
+          display: flex;
+          align-items: center;
+          box-sizing: border-box;
+          width: 9rem;
+          cursor: pointer;
+        }
+
+        & .gallery {
+          border-radius: 4px;
+          border: 1px solid #c5c5c5;
+          display: flex;
+          align-items: center;
+          box-sizing: border-box;
+          width: 9rem;
+          cursor: pointer;
+          color: #606a6e;
+        }
+
+        & .cyberpunk {
+          border-radius: 4px;
+          border: 1px solid #c5c5c5;
+          display: flex;
+          align-items: center;
+          box-sizing: border-box;
+          width: 9rem;
+          cursor: pointer;
+          color: #606a6e;
+        }
+
+        & .spaceBtn.active {
+          background: linear-gradient(to right, #d10cc8, #fd3e1a);
+          border-radius: 4px;
+          display: flex;
+          align-items: center;
+          box-sizing: border-box;
+          width: 9rem;
+          cursor: pointer;
+        }
+
+        & .galleryBtn.active {
+          background: linear-gradient(to right, #d10cc8, #fd3e1a);
+          border-radius: 4px;
+          display: flex;
+          align-items: center;
+          box-sizing: border-box;
+          width: 9rem;
+          cursor: pointer;
+        }
+
+        & .cyberpunkBtn.active {
+          background: linear-gradient(to right, #d10cc8, #fd3e1a);
+          border-radius: 4px;
+          display: flex;
+          align-items: center;
+          box-sizing: border-box;
+          width: 9rem;
+          cursor: pointer;
+        }
+
+        & .commonBtn {
+          border-radius: 4px;
+          border: 1px solid #c5c5c5;
+          display: flex;
+          align-items: center;
+          box-sizing: border-box;
+          width: 9rem;
+          cursor: pointer;
+          color: #606a6e;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 577px) {
+  .home {
+    .join {
+      width: 100%;
+      // max-width: 90rem;
+      height: 15rem;
+      background-color: #1c1c20;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+      margin-top: 8rem;
+
+      & h1 {
+        font-family: "MyriadConcept";
+        font-size: 1.6rem;
+      }
+
+      & .icons {
+        width: 15rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .home {
+    & .mostnotableMuseums {
+      & h1 {
+        font-size: 2.2rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 477px) {
+  .home {
+    & .mostnotableMuseums {
+      & h1 {
+        font-size: 2rem;
+      }
+
+      & p {
+        font-size: 0.8rem;
+      }
+
+      & .btnContainer {
+        font-family: "HelveticaNeueLTPro-Bd";
+        width: 24rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        color: #fff;
+        margin-bottom: 3rem;
+
+        & .space {
+          background: linear-gradient(to right, #d10cc8, #fd3e1a);
+          border-radius: 4px;
+          display: flex;
+          align-items: center;
+          box-sizing: border-box;
+          width: 7rem;
+          cursor: pointer;
+          font-size: 0.5rem !important;
+        }
+
+        & .gallery {
+          border-radius: 4px;
+          border: 1px solid #c5c5c5;
+          display: flex;
+          align-items: center;
+          box-sizing: border-box;
+          width: 7rem;
+          cursor: pointer;
+          font-size: 0.5rem;
+          color: #606a6e;
+        }
+
+        & .cyberpunk {
+          border-radius: 4px;
+          border: 1px solid #c5c5c5;
+          display: flex;
+          align-items: center;
+          box-sizing: border-box;
+          width: 7rem;
+          cursor: pointer;
+          font-size: 0.5rem;
+          color: #606a6e;
+        }
+      }
+
+      & .spaceBtn.active {
+        background: linear-gradient(to right, #d10cc8, #fd3e1a);
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        width: 7rem !important;
+        cursor: pointer;
+        font-size: 0.5rem !important;
+      }
+
+      & .galleryBtn.active {
+        background: linear-gradient(to right, #d10cc8, #fd3e1a);
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        width: 7rem !important;
+        cursor: pointer;
+        font-size: 0.5rem !important;
+      }
+
+      & .cyberpunkBtn.active {
+        background: linear-gradient(to right, #d10cc8, #fd3e1a);
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        width: 7rem !important;
+        cursor: pointer;
+        font-size: 0.5rem !important;
+      }
+
+      & .commonBtn {
+        border-radius: 4px;
+        border: 1px solid #c5c5c5;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        width: 7rem !important;
+        cursor: pointer;
+        font-size: 0.5rem !important;
+        color: #606a6e;
+      }
+    }
+
+    .join {
+      width: 100%;
+      // max-width: 90rem;
+      height: 15rem;
+      background-color: #1c1c20;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+
+      & h1 {
+        font-family: "MyriadConcept";
+        font-size: 1.3rem;
+      }
+
+      & .icons {
+        width: 15rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
+}
